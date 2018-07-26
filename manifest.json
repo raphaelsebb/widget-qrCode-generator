@@ -5,7 +5,6 @@
   "description": "Finish your navigation on your smart phone!",
   "permissions": [
     "activeTab",
-    "cookies",
     "tabs"
   ],
   "browser_action": {

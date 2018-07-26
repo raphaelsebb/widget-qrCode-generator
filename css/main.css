@@ -9,40 +9,40 @@
     src: url(../assets/ProximaNovaSoft-Regular-webfont.ttf);
 }
 
-#flatchrGo html, #flatchrGo body {
+#mobileGo html, #mobileGo body {
   font-family: 'Proxima Nova Soft';
   margin: 0;
 }
 
-#flatchrGo .container {
+#mobileGo .container {
   padding: 14px 20px;
   margin-bottom: 20px;
 }
 
-#flatchrGo .login-form {
+#mobileGo .login-form {
     width: 300px;
     height: 150px;
     margin: 20px;
 }
-#flatchrGo .vacancy-form {
+#mobileGo .vacancy-form {
     min-height: 50px;
     width: 100%;
 }
 
-#flatchrGo .resume {
+#mobileGo .resume {
   display: none;
 }
 
-#flatchrGo ul {
+#mobileGo ul {
     margin-left: 0;
     padding-left: 0;
 }
 
-#flatchrGo li {
+#mobileGo li {
     list-style-type: none;
 }
 
-#flatchrGo .title {
+#mobileGo .title {
   font-size: 22px;
   color: #ffffff;
   background: #00aec8;
@@ -51,7 +51,7 @@
   font-weight: bold;
 }
 
-#flatchrGo .btn {
+#mobileGo .btn {
   width: 100%;
   font-size: 16px;
   border-radius: 3px;
@@ -65,42 +65,42 @@
   transition: all 0.2s ease;
 }
 
-#flatchrGo .btn:hover {
+#mobileGo .btn:hover {
   opacity: 0.9;
 }
 
-#flatchrGo .btn.btn-primary, #flatchrGo .btn.btn-primary:hover {
+#mobileGo .btn.btn-primary, #mobileGo .btn.btn-primary:hover {
   background: #00aec8 !important;
 }
 
-#flatchrGo .btn:hover, #flatchrGo .btn:focus {
+#mobileGo .btn:hover, #mobileGo .btn:focus {
   outline: 0;
 }
 
-#flatchrGo input.form-control {
+#mobileGo input.form-control {
   height: 42px;
 }
 
-#flatchrGo input.form-control:focus {
+#mobileGo input.form-control:focus {
   outline: 0;
 }
 
-#flatchrGo input[type=radio] {
+#mobileGo input[type=radio] {
     display: none;
 }
 
-#flatchrGo input[type=radio]:checked + label:before {
+#mobileGo input[type=radio]:checked + label:before {
   background: #00aec8;
   border: 3px solid #fff;
   box-shadow: 0px 0px 0px 0px #fff, 0px 0px 0px 1px #00aec8;
   transition: all 0.2s ease;
 }
 
-#flatchrGo label {
+#mobileGo label {
   cursor: pointer;
 }
 
-#flatchrGo label:before {
+#mobileGo label:before {
     content: "";
     display: inline-block;
     width: 14px;
@@ -114,19 +114,19 @@
     transform: translateY(-50%);
 }
 
-#flatchrGo label:before {
+#mobileGo label:before {
     border-radius: 8px;
 }
 
-#flatchrGo #error, #flatchrGo #error-select, #flatchrGo #error-url, #flatchrGo #success {
+#mobileGo #error, #mobileGo #error-select, #mobileGo #error-url, #mobileGo #success {
   display: none;
 }
 
-#flatchrGo textarea {
+#mobileGo textarea {
    resize: none;
 }
 
-#flatchrGo #find-offers {
+#mobileGo #find-offers {
   border: none;
   box-shadow: none;
   cursor: pointer;
@@ -137,7 +137,7 @@
   display: inline-block;
 }
 
-#flatchrGo .cancel {
+#mobileGo .cancel {
   color: #ccc;
   display: none;
   cursor: pointer;
@@ -149,12 +149,12 @@
   border-radius: 3px;
 }
 
-#flatchrGo .cancel:hover {
+#mobileGo .cancel:hover {
   color: #bbb;
   transition: all 0.2s ease;
 }
 
-#flatchrGo footer {
+#mobileGo footer {
   bottom: 0;
   text-align: center;
   width: 100%;
@@ -165,11 +165,11 @@
   padding-top: 10px;
 }
 
-#flatchrGo footer a {
+#mobileGo footer a {
   color: #ccc;
 }
 
-#flatchrGo .no-offer {
+#mobileGo .no-offer {
   text-align: center;
   color: #aaa;
 }
