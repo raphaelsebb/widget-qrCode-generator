@@ -1,33 +1,175 @@
 /*
-** file: css/main.css
-** description: custom styling for "html/main.html" file
+** blue: #46affe
+** red: #f74444
+** white: #fefefe
 */
 
-div#main-outer {
+@font-face {
+    font-family: 'Proxima Nova Soft';
+    src: url(../assets/ProximaNovaSoft-Regular-webfont.ttf);
+}
+
+#flatchrGo html, #flatchrGo body {
+  font-family: 'Proxima Nova Soft';
+  margin: 0;
+}
+
+#flatchrGo .container {
+  padding: 14px 20px;
+  margin-bottom: 20px;
+}
+
+#flatchrGo .login-form {
     width: 300px;
-    margin: 5px;
-    background: #DDD;
-    border-radius: 5px;
+    height: 150px;
+    margin: 20px;
+}
+#flatchrGo .vacancy-form {
+    min-height: 50px;
+    width: 100%;
 }
 
-div#main-inner {
-    padding: 8px;
+#flatchrGo .resume {
+  display: none;
 }
 
-div#main-title {
-    font-size: 16px;
-    text-align: center;
-    font-weight: bold;
+#flatchrGo ul {
+    margin-left: 0;
+    padding-left: 0;
 }
 
-img#main-image {
-    display: block;
-    margin-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
+#flatchrGo li {
+    list-style-type: none;
 }
 
-div#main-about-text {
-    margin-top: 10px;
-    text-align: center;
+#flatchrGo .title {
+  font-size: 22px;
+  color: #ffffff;
+  background: #00aec8;
+  padding: 30px 20px;
+  margin: 0;
+  font-weight: bold;
+}
+
+#flatchrGo .btn {
+  width: 100%;
+  font-size: 16px;
+  border-radius: 3px;
+  color: #fff;
+  background: #ddd;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 11px 30px;
+  transition: all 0.2s ease;
+}
+
+#flatchrGo .btn:hover {
+  opacity: 0.9;
+}
+
+#flatchrGo .btn.btn-primary, #flatchrGo .btn.btn-primary:hover {
+  background: #00aec8 !important;
+}
+
+#flatchrGo .btn:hover, #flatchrGo .btn:focus {
+  outline: 0;
+}
+
+#flatchrGo input.form-control {
+  height: 42px;
+}
+
+#flatchrGo input.form-control:focus {
+  outline: 0;
+}
+
+#flatchrGo input[type=radio] {
+    display: none;
+}
+
+#flatchrGo input[type=radio]:checked + label:before {
+  background: #00aec8;
+  border: 3px solid #fff;
+  box-shadow: 0px 0px 0px 0px #fff, 0px 0px 0px 1px #00aec8;
+  transition: all 0.2s ease;
+}
+
+#flatchrGo label {
+  cursor: pointer;
+}
+
+#flatchrGo label:before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    background-color: #FFFFFF;
+    box-shadow: inset 0 0 1px rgba(0,0,0, 1);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#flatchrGo label:before {
+    border-radius: 8px;
+}
+
+#flatchrGo #error, #flatchrGo #error-select, #flatchrGo #error-url, #flatchrGo #success {
+  display: none;
+}
+
+#flatchrGo textarea {
+   resize: none;
+}
+
+#flatchrGo #find-offers {
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #aaa;
+  width: 90%;
+  display: inline-block;
+}
+
+#flatchrGo .cancel {
+  color: #ccc;
+  display: none;
+  cursor: pointer;
+  line-height: 40px;
+  padding: 0 10px;
+  font-size: 20px;
+  float: right;
+  transition: all 0.2s ease;
+  border-radius: 3px;
+}
+
+#flatchrGo .cancel:hover {
+  color: #bbb;
+  transition: all 0.2s ease;
+}
+
+#flatchrGo footer {
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  color: #ccc;
+  background: #fff;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+#flatchrGo footer a {
+  color: #ccc;
+}
+
+#flatchrGo .no-offer {
+  text-align: center;
+  color: #aaa;
 }
