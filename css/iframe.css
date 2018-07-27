@@ -4,7 +4,7 @@ mobileGo-extension {
     width: 100%;
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    overflow: scroll;
+    overflow: hidden;
     position: fixed;
     top: 0px;
     right: 0px;
@@ -19,4 +19,5 @@ mobileGo-extension iframe {
     width: 400px;
     background: #fefefe;
     border: none;
+    overflow: hidden;
 }

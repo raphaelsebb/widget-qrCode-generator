@@ -12,18 +12,31 @@
 #mobileGo html, #mobileGo body {
   font-family: 'Proxima Nova Soft';
   margin: 0;
+  overflow: hidden;
+  background: #fefefe;
 }
 
 #mobileGo .container {
   padding: 14px 20px;
   margin-bottom: 20px;
+  margin: auto;
+  align-items: center;
+  text-align: center;
 }
 
 #mobileGo .title {
   font-size: 22px;
-  color: #ffffff;
+  color: #fefefe;
   background: #46affe;
   padding: 30px 20px;
   margin: 0;
   font-weight: bold;
+}
+
+#mobileGo #qr-code img {
+    width: 200px;
+}
+
+#mobileGo #url {
+    padding: 20px 0;
 }
