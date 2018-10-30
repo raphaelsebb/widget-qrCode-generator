@@ -13,7 +13,7 @@ function open_close() {
 }
 
 function insertHtml() {
-    // create div & set style
+    // create content element & set style
     var mobileGo = document.createElement('mobileGo-extension');
     mobileGo.id = "mobileGo";
     mobileGo.style.zIndex = "99999";
@@ -24,6 +24,8 @@ function insertHtml() {
     var iframe = document.createElement('iframe');
     iframe.id = "iframe-mobileGo";
     iframe.src = chrome.extension.getURL("index.html");
+    iframe.css("margin", "0");
+    iframe.css("padding", "0");
 
     document.getElementById('mobileGo').appendChild(iframe);
     $('#mobileGo').fadeIn(200);

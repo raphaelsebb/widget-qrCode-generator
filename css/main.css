@@ -37,6 +37,10 @@
     width: 200px;
 }
 
+#mobileGo #qr-code .loader {
+    width: 100px;
+}
+
 #mobileGo #url {
     padding: 20px 0;
 }
