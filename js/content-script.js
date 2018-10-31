@@ -24,8 +24,8 @@ function insertHtml() {
     var iframe = document.createElement('iframe');
     iframe.id = "iframe-mobileGo";
     iframe.src = chrome.extension.getURL("index.html");
-    iframe.css("margin", "0");
-    iframe.css("padding", "0");
+    $(iframe).css("margin", "0");
+    $(iframe).css("padding", "0");
 
     document.getElementById('mobileGo').appendChild(iframe);
     $('#mobileGo').fadeIn(200);
