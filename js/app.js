@@ -1,11 +1,12 @@
 chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
     let url = encodeURI(tabs[0].url);
+    let urlObject = new URL(tabs[0].url)
     let title = tabs[0].title;
-    let picularAPI = 'https://server.picular.co/'+encodeURIComponent(title)
-    let colorKey = ''
-    let test = $.getJSON(picularAPI, function(data) {
-        colorKey = data.primary
-        colorSecondary = data.secondary
+    let domain = urlObject.hostname;
+    let picularAPI = 'https://server.picular.co/' + domain
+    $.getJSON(picularAPI, function(data) {
+        let colorKey = data.primary
+        let colorSecondary = data.secondary
         updateTheme(colorKey, colorSecondary)
     })
     if (title.length > 80) {
