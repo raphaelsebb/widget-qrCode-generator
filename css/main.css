@@ -24,12 +24,15 @@
   text-align: center;
 }
 
-#mobileGo .title {
+#mobileGo header {
+  background: #46affe;
+  margin: 0;
+}
+
+#mobileGo h1 {
   font-size: 22px;
   color: #fefefe;
-  background: #46affe;
   padding: 30px 20px;
-  margin: 0;
   text-align: center;
   font-weight: bold;
 }
@@ -42,6 +45,6 @@
     width: 100px;
 }
 
-#mobileGo #url {
-    padding: 20px 0;
+#mobileGo #title {
+    padding-bottom: 14px;
 }

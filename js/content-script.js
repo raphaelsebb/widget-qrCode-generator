@@ -1,11 +1,11 @@
 chrome.runtime.onMessage.addListener(function(msg, sender) {
     if (msg == "toggle") {
-        open_close();
+        openClose();
     }
 });
 
-function open_close() {
-    if ($('#mobileGo').length > 0) {
+function openClose() {
+    if ($('#mobileGo')) {
         toggle();
     } else {
         insertHtml();
@@ -31,11 +31,10 @@ function insertHtml() {
     $('#mobileGo').fadeIn(200);
 
     // hide on click outside
-    $(document).mouseup(function(e)
-    {
-        if(e.target.id != $("#mobileGo").attr('id') && !$("#mobileGo").has(e.target).length)
-        {
-            $("#mobileGo").fadeOut(200);
+    $(document).mouseup(function(e) {
+        const container = $("#mobileGo");
+        if (!container.is(e.target) && !container.has(e.target)) {
+            container.fadeOut(200);
         }
     });
 }
