@@ -5,7 +5,7 @@ chrome.runtime.onMessage.addListener(function(msg, sender) {
 });
 
 function openClose() {
-    if ($('#mobileGo')) {
+    if ($('#mobileGo').length > 0) {
         toggle();
     } else {
         insertHtml();
